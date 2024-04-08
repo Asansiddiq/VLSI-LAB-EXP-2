@@ -1,8 +1,6 @@
-module mux_8(s0,s1,s2,d,y);
-input s0,s1,s2;
-input [7:0]d;
+module mux(a,b,c,d,s0,s1,y);
+input a,b,c,d,s0,s1;
 output y;
-
-
-
+assign y=s1 ?(s0?d:c):(s0?b:a);
 endmodule
+
